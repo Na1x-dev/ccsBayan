@@ -1,31 +1,91 @@
 * {
-	vertical-align: baseline;
 	font-family: "Montserrat";
 	font-size: 100%;
 	border: 0 none;
-	outline: 0;
 	padding: 0;
 	margin: 0;
+	background-color: white;
 }
 
-.bayan-container{
-    width: 50vw;
-    margin-left: auto;
-    margin-right: auto;
+html {
+    width: 100vw;
+    overflow-x: hidden;
 }
 
-.meme-img-div{
-    margin-left: auto;
-    margin-right: auto;
-    width: 25vw;
+.bayan-container {
+	width: 50vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.meme-img{
-    width: 25vw;
+.meme-img-div {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50vw;
+	height: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-hr{
-    border-top: 1px solid #444444; 
+.meme-img {
+	padding-top: 1.5vh;
+	padding-bottom: 1.5vh;
+	width: 0;
+}
+
+hr {
+	border-top: 1px solid #444444;
+}
+
+.bayan-meme-button {
+	display: none;
+}
+
+.bayan-meme-label {
+	padding-top: 1.5vh;
+	padding-bottom: 1.5vh;
+	margin-left: 0.5vw;
+	margin-right: 0.5vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.meme-header-text {
+	font-size: 160%;
+	color: #333333;
+}
+
+.meme-header-icon{
+	height: 5vh;
+}
+
+.meme-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bayan-header {
+	color: #333333;
+	font-size: 180%;
+	margin-top: 1.5vh;
+	margin-bottom: 1.5vh;
+	margin-left: 0.5vw;
+	margin-right: 0.5vw;
+}
+
+.bayan-meme-label:hover .meme-img{
+	width: 25vw;
+}
+
+.bayan-meme-label:hover .meme-img-div{
+	height: auto;
+}
+
+.bayan-meme-label:hover .meme-header-icon{
+	transform: rotate(45deg);
 }
 
 @font-face {
@@ -34,3 +94,6 @@ hr{
 	font-style: normal;
 	font-weight: normal;
 }
+
+
+
