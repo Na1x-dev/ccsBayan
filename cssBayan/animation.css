@@ -1,0 +1,37 @@
+@keyframes openAnim {
+    0% {
+     
+    } 
+    100% {
+        width: 25vw;
+    }
+}
+
+@keyframes closeAnim {
+    0% {
+     
+  
+    } 
+    100% {
+        width: 0;
+    }
+}
+
+/* @keyframes rotatePlusRight {
+    0% {
+     
+    } 
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes rotatePlusLeft {
+    0% {
+     
+  
+    } 
+    100% {
+        transform: rotate(-45deg);
+    }
+} */

@@ -58,6 +58,8 @@ hr {
 
 .meme-header-icon{
 	height: 5vh;
+	transition: transform 0.5s;
+	opacity: 0;
 }
 
 .meme-header{
@@ -77,7 +79,9 @@ hr {
 }
 
 .bayan-meme-label:hover .meme-img{
-	width: 25vw;
+	animation-name: openAnim;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
 }
 
 .bayan-meme-label:hover .meme-img-div{
@@ -85,8 +89,17 @@ hr {
 }
 
 .bayan-meme-label:hover .meme-header-icon{
-	transform: rotate(45deg);
+	transform: rotate(135deg);
 }
+
+.bayan-container:hover .meme-header-icon{
+	opacity: 1;
+}
+
+.bayan-meme-button:checked+label::before .meme-img{
+	width: 25vw;
+}
+
 
 @font-face {
 	font-family: "Montserrat";
