@@ -1,0 +1,36 @@
+* {
+	vertical-align: baseline;
+	font-family: "Montserrat";
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.bayan-container{
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.meme-img-div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 25vw;
+}
+
+.meme-img{
+    width: 25vw;
+}
+
+hr{
+    border-top: 1px solid #444444; 
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("fonts/Montserrat-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
