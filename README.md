@@ -1,1 +1,1 @@
-https://${YOUR_GITHUB_NAME}.github.io/cssBayan/cssBayan/index.html
+https://na1x-dev.github.io/cssBayan/cssBayan/index.html
