@@ -22,16 +22,16 @@ html {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50vw;
-	height: 0;
+	/* height: 0; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	transition-duration: 0.5s;
 }
 
 .meme-img {
-	padding-top: 1.5vh;
-	padding-bottom: 1.5vh;
 	width: 0;
+	transition-duration: 0.5s;
 }
 
 hr {
@@ -45,10 +45,11 @@ hr {
 .bayan-meme-label {
 	padding-top: 1.5vh;
 	padding-bottom: 1.5vh;
-	margin-left: 0.5vw;
-	margin-right: 0.5vw;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
 	display: flex;
 	flex-direction: column;
+	transition-duration: 0.5s;
 }
 
 .meme-header-text {
@@ -72,20 +73,15 @@ hr {
 .bayan-header {
 	color: #333333;
 	font-size: 180%;
-	margin-top: 1.5vh;
-	margin-bottom: 1.5vh;
-	margin-left: 0.5vw;
-	margin-right: 0.5vw;
+	/* font-size: 2vw; */
+	padding-top: 1.5vh;
+	padding-bottom: 1.5vh;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
 }
 
-.bayan-meme-label:hover .meme-img{
-	animation-name: openAnim;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-}
-
-.bayan-meme-label:hover .meme-img-div{
-	height: auto;
+.bayan-meme-label:hover{
+	cursor: pointer;
 }
 
 .bayan-meme-label:hover .meme-header-icon{
@@ -96,10 +92,22 @@ hr {
 	opacity: 1;
 }
 
-.bayan-meme-button:checked+label::before .meme-img{
+.bayan-meme-label:hover .meme-img, 
+.bayan-meme-button:checked + label > .meme-img-div > .meme-img{
+	height: auto; 
 	width: 25vw;
 }
 
+.bayan-meme-button:checked + label > .meme-img-div, 
+.bayan-meme-label:hover .meme-img-div{
+	height: auto;
+	padding-top: 1.5vh;
+	padding-bottom: 1.5vh;
+}
+
+.bayan-meme-button:checked + label > .meme-header > .meme-header-icon-div > .meme-header-icon{
+	transform: rotate(135deg);
+}
 
 @font-face {
 	font-family: "Montserrat";
