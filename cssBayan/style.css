@@ -1,0 +1,138 @@
+* {
+	font-family: "Montserrat";
+	font-size: 100%;
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+	background-color: white;
+	position: static;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.bayan-container {
+	width: 100vh;
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1vh;
+	padding-right: 1vh;
+}
+
+.meme-img-div {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.meme-img {
+	width: 0;
+	transition-duration: 0.5s;
+}
+
+hr {
+	border-top: 1px solid #444444;
+}
+
+.bayan-meme-button {
+	display: none;
+}
+
+.bayan-meme-label {
+	padding-top: 1.5vh;
+	padding-bottom: 1.5vh;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.meme-header-text {
+	font-size: calc(1vw + 1vh);
+	color: #179698;
+	transition-duration: 0.5s;
+}
+
+.meme-header-icon{
+	height: calc(1.5vh + 1.5vw);
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+.meme-header-icon-div{
+	display: flex;
+	align-items: center;
+}
+
+.meme-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bayan-header {
+	color: #333333;
+	font-size: calc(1.1vw + 1.1vh);
+	padding-top: calc(0.6vh + 0.6vw);
+	padding-bottom: calc(0.6vh + 0.6vw);
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+}
+
+.bayan-meme-label:hover{
+	cursor: pointer;
+}
+
+.bayan-meme-label:hover .meme-header-icon{
+	transform: rotate(135deg);
+}
+
+.bayan-container:hover .meme-header-icon{
+	opacity: 1;
+}
+
+.bayan-container:hover .meme-header-text{
+	color: #333333;
+}
+
+.bayan-meme-label:hover .meme-img, 
+.bayan-meme-button:checked + label > .meme-img-div > .meme-img{
+	height: auto; 
+	width: 50vh;
+	max-width: 95%;
+	
+}
+
+.bayan-meme-button:checked + label > .meme-img-div, 
+.bayan-meme-label:hover .meme-img-div{
+	height: auto;
+	padding-top: calc(0.6vh + 0.6vw);
+	padding-bottom: calc(0.6vh + 0.6vw);
+}
+
+.bayan-meme-button:checked + label > .meme-header > .meme-header-text{
+	color: #333333;
+}
+
+
+
+.bayan-meme-button:checked + label > .meme-header > .meme-header-icon-div > .meme-header-icon{
+	transform: rotate(135deg);
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("fonts/Montserrat-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+
