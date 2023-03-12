@@ -33,7 +33,7 @@ html {
 
 .meme-img {
 	width: 0;
-	transition-duration: 0.7s;
+	transition-duration: 0.5s;
 }
 
 hr {
@@ -56,12 +56,13 @@ hr {
 .meme-header-text {
 	font-size: calc(1vw + 1vh);
 	color: #179698;
+	transition-duration: 0.5s;
 }
 
 .meme-header-icon{
 	height: calc(1.5vh + 1.5vw);
-	transition: transform 0.7s;
 	opacity: 0;
+	transition-duration: 0.5s;
 }
 
 .meme-header-icon-div{
